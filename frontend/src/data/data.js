@@ -13,7 +13,6 @@ export const pizzas = [
         category: 'Category 1',
         image: './assets/images/img1.png',
         desc: 'Description for Pizza 1',
-
     },
     {
         _id:2,

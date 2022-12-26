@@ -55,5 +55,10 @@
 .form-other-link {
     text-align: right;
     color: #111111;
-    text-decoration: no;
+    text-decoration: none;
+    letter-spacing:1.2px;
+}
+
+.form-other-link:hover {
+    text-decoration: underline;
 }

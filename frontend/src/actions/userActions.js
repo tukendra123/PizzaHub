@@ -33,6 +33,7 @@ export const login = (user) => async dispatch => {
 export const logout = () => async dispatch => {
    
         localStorage.removeItem('currentUser');
+        localStorage.removeItem('cartItems');
         window.location.href='/login';
 
 }

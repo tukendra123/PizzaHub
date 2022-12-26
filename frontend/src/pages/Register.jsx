@@ -44,6 +44,7 @@ const Register = () => {
                         <input type="password" required placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} />
                         <input type="password" required placeholder='Confirm Password'  value={conformPassword} onChange={(e) => setConformPassword(e.target.value)} />
                         <button className="form-btn" onClick={registerHandler} >Register</button>
+                        <a href='/login' className='form-other-link' >For Login </a>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import { login } from '../actions/userActions';
 import Navbar from '../components/navbar/Navbar'
 
@@ -12,7 +12,7 @@ const Login = () => {
     const [password, setPassword] = useState('');
 
     const dispatch = useDispatch();
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     useEffect(() => {
         if(localStorage.getItem('currentUser')){

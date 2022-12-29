@@ -43,7 +43,7 @@ const Pizza = ({ pizza }) => {
           <span className="variants">Quantity</span>
           <div className="p-select quantity">
             <select value={quantity} onChange={(e) => { setQuantity(e.target.value) }}>
-              {[...Array(8).keys()].map((x, key) => (
+              {[...Array(7).keys()].map((x, key) => (
                 <option key={key} value={key + 1}>{key + 1}</option>
               ))}
             </select>

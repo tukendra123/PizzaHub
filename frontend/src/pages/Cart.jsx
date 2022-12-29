@@ -4,6 +4,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { addToCart, deleteItem } from '../actions/cartActions'
 import Navbar from '../components/navbar/Navbar'
+import { useNavigate } from 'react-router-dom'
 import './cart.css'
 
 const Cart = () => {
@@ -11,8 +12,15 @@ const Cart = () => {
     const cartState = useSelector(state => state.cartReducer);
     const cartItems = cartState.cartItems
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     var totalPrice = cartItems.reduce((x, item) => x + item.price, 0);
+
+    function checkoutHandler() {
+        if(totalPrice > 0){
+            navigate('/checkoutdetails')
+        }
+    }
 
 
     return (
@@ -61,7 +69,7 @@ const Cart = () => {
                             <h2 className="totalprice">
                                 Total Price :₹ {(totalPrice).toFixed(2)}
                             </h2>
-                            <button>
+                            <button totalPrice={totalPrice} onClick={checkoutHandler} >
                                 <FontAwesomeIcon icon={faMoneyBill } /> Checkout
                             </button>
                         </div>

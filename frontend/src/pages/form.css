@@ -24,7 +24,8 @@
     border-radius: 5px;
 }
 
-.form input {
+.form input ,
+.form textarea{
     margin-bottom: 10px;
     border: none;
     outline: none;

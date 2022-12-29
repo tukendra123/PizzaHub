@@ -23,4 +23,6 @@ const getAllPizzasReducer = (state = {pizzas : []}, action) => {
 
 }
 
-export default getAllPizzasReducer;
+export default getAllPizzasReducer
+
+

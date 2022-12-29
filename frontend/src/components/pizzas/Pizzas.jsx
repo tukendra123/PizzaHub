@@ -24,10 +24,12 @@ const Pizzas = () => {
             <div className="ps-row">
                 <div className="ps-col">
                     <div className="ps-cards">
-                        {loading ? (<h2 className='loading'>Loading...</h2>) : error ? (<h2 className='error'>Error...</h2>) : (
-                            pizzas.map((pizza, key) => (
-                                <Pizza key={key} pizza={pizza} />
-                            ))
+                        { loading ? (<h2 className='loading'>Loading...</h2>) : error ? (<h2 className='error'>Error...</h2>) : (
+                            pizzas && pizzas.map((pizza, i) => {
+                                return (
+                                    <Pizza pizza={pizza} key={i} />
+                                )
+                            })
                         )}
                     </div>
                 </div>

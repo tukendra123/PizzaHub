@@ -1,0 +1,101 @@
+[
+    {
+        "name": "Pizza 1",
+        "varients": ["small","medium","large"],
+        "prices": [
+            {
+                "small": 200,
+                "medium": 300,
+                "large": 400
+            }
+        ],
+        "category": "American",
+        "image": "./assets/images/img1.png",
+        "desc": "Description for Pizza 1"
+
+    },
+    {
+        "name": "Pizza 2",
+        "varients": ["small","medium","large"],
+        "prices": [
+            {
+                "small": 180,
+                "medium": 250,
+                "large": 350
+            }
+        ],
+        "category": "Italian",
+        "image": "./assets/images/img2.png",
+        "desc": "Description for Pizza 2"
+    },
+    {
+        "name": "Pizza 3",
+        "varients": ["small","medium","large"],
+        "prices": [
+            {
+                "small": 180,
+                "medium": 250,
+                "large": 350
+            }
+        ],
+        "category": "Italian",
+        "image": "./assets/images/img3.png",
+        "desc": "Description for Pizza 3"
+    },
+    {
+        "name": "Pizza 4",
+        "varients": ["small","medium","large"],
+        "prices": [
+            {
+                "small": 200,
+                "medium": 250,
+                "large": 300
+            }
+        ],
+        "category": "Italian",
+        "image": "./assets/images/img4.png",
+        "desc": "Description for Pizza 4"
+    },
+    {
+        "name": "Pizza 5",
+        "varients": ["small","medium","large"],
+        "prices": [
+            {
+                "small": 250,
+                "medium": 300,
+                "large": 350
+            }
+        ],
+        "category": "Italian",
+        "image": "./assets/images/img5.png",
+        "desc": "Description for Pizza 5"
+    },
+    {
+        "name": "Pizza 6",
+        "varients": ["small","medium","large"],
+        "prices": [
+            {
+                "small": 200,
+                "medium": 250,
+                "large": 300
+            }
+        ],
+        "category": "American",
+        "image": "./assets/images/img6.png",
+        "desc": "Description for Pizza 6"
+    },
+    {
+        "name": "Pizza 7",
+        "varients": ["small","medium","large"],
+        "prices": [
+            {
+                "small": 150,
+                "medium": 200,
+                "large": 250
+            }
+        ],
+        "category": "American",
+        "image": "./assets/images/img7.png",
+        "desc": "Description for Pizza 7"
+    }
+]

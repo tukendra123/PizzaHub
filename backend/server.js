@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const pizzaModel = require("./models/pizzaModel.js");
 const pizzaRoute = require('./routes/pizzaRoute.js');
 const userRoute = require('./routes/userRoute.js');
+const orderRoute = require('./routes/orderRoute.js');
 
 //Create DB connection
 const MONGODB_URL = "mongodb://localhost:27017/pizza_web"
@@ -20,6 +21,7 @@ app.use(express.json());
 
 app.use('/api/pizzas/' , pizzaRoute) ;
 app.use('/api/users/', userRoute);
+app.use('/api/orders/', orderRoute);
 
 app.get("/" ,(req,res) => {
     res.send("Server is running!");

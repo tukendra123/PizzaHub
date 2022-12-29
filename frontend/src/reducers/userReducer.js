@@ -1,6 +1,6 @@
 const registerUserReducer = (state = {}, action) => {
     switch(action.type) {
-        case 'REGISTER_USEER_REQUEST' : return {
+        case 'REGISTER_USER_REQUEST' : return {
             loading : true 
         }
 

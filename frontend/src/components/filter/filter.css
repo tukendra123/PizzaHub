@@ -2,18 +2,20 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 40px 0 0 0;
+    padding: 15px 0 0 0;
     font-size: 15px;
+    background-color: rgb(255, 255, 255);
 }
 
 .filter-input {
     outline: none;
     border: none;
-    border-bottom: 2px solid black;
     height: 40px;
     padding: 5px 15px;
     width: 300px;
+    border: 1px solid black;
     letter-spacing: 1.3px;
+    border-radius: 5px;
 }
 
 .filter-select {
@@ -24,6 +26,7 @@
     border-radius: 5px;
     overflow: hidden;
     margin: 5px 2px;
+    background-color: rgb(193, 244, 206);
 }
 
 .filter-select::after {
@@ -32,19 +35,19 @@
     padding: 5px;
     top: 0;
     right: 0;
-    background-color: rgb(3, 56, 131);
+    background-color: rgb(67, 243, 111);
     transition: .25s all ease;
     pointer-events: none;
 }
 
 .filter-select:hover::after{
-    color: rgb(198, 237, 4);
+    color: rgb(104, 137, 244);
 }
 
-.fliter-btn {
+.filter-btn {
     padding: 10px 15px;
-    background-color: rgb(161, 158, 158);
-    color: white;
+    background-color: rgb(193, 244, 206);
+    color: rgb(0, 0, 0);
     cursor: pointer;
     border: none;
     text-transform: uppercase;
@@ -53,7 +56,7 @@
     border-radius: 5px;
 }
 
-.fliter-btn:hover {
-    background-color: rgb(0, 179, 255);
+.filter-btn:hover {
+    background-color: rgb(79, 255, 123);;
     color: blue;
 }

@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const placeOrder = () => async (dispatch, getState) => {
 
-    dispatch({ type: "PLACE_ORDER_REQUEST" });
+    dispatch({type: "PLACE_ORDER_REQUEST" });
 
     const currentUser = getState().loginUserReducer.currentUser;
     const cartItems = getState().cartReducer.cartItems;
@@ -14,14 +14,14 @@ export const placeOrder = () => async (dispatch, getState) => {
 
     try {
 
-        const res = await axios.post('/api/orders/placeorders', { totalPrice, currentUser, cartItems, shippingAddress });
-        dispatch({ type: "PLACE_ORDER_SUCCESS" });
+        const res = await axios.post('/api/orders/placeorders', {totalPrice, currentUser, cartItems, shippingAddress});
+        dispatch({type: "PLACE_ORDER_SUCCESS" });
         console.log(res);
         localStorage.removeItem('cartItems');
         localStorage.removeItem('shippingAddress');
 
-    } catch (err) {
-        dispatch({ type: "PLACE_ORDER_FAIL" });
+    } catch(err) {
+        dispatch({type: "PLACE_ORDER_FAIL" });
         console.log(err);
 
     }

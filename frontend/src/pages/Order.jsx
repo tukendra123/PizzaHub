@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getUserOrders } from '../actions/orderActions'
@@ -31,14 +31,14 @@ const Order = () => {
           <div className='or-col'>
             <div className='or-cards'>
               {loading ? (<h2 className='loading'>Loading...</h2>) : error ? (<h2 className='error'>Error</h2>) : (
-                  orders.map((order) => (
-                    <div className='or-card'>
+                  orders.map((order, key) => (
+                    <div key={key} className='or-card'>
                       <div className="or-header">
-                        {order.orderItems.map((item) => (
-                          <>
+                        {order.orderItems.map((item, key) => (
+                          <Fragment key={key}>
                             <h2 className='or-items' >{item.name} * {item.quantity} = ₹{(item.price).toFixed(2)} </h2>
                             <span className='or-varient'> {item.variant} </span>
-                          </>
+                          </Fragment>
                         ))}
                       </div>
                       <div className="or-body">
